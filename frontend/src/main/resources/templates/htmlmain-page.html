@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>htmlmain-page</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
+</head>
+<body class="bg-light">
+<div class="container mt-5">
+    <h2 class="mb-4 text-center text-primary">Petshop-frontend</h2>
+    <ul class="list-group">
+        <li class="list-group-item mb-3 d-flex justify-content-between align-items-center">
+            <div><strong>Rahul Patel:</strong> <span th:text="${userData.firstName}"></span></div>
+            <button class="btn btn-primary btn-sm">Click</button>
+        </li>
+        <li class="list-group-item mb-3 d-flex justify-content-between align-items-center">
+            <div><strong>Dishank:</strong> <span th:text="${userData.lastName}"></span></div>
+            <button class="btn btn-primary btn-sm">Click</button>
+        </li>
+        <li class="list-group-item mb-3 d-flex justify-content-between align-items-center">
+            <div><strong>Manjot:</strong> <span th:text="${userData.email}"></span></div>
+            <button class="btn btn-primary btn-sm">Click</button>
+        </li>
+        <li class="list-group-item mb-3 d-flex justify-content-between align-items-center">
+            <div><strong>Harmanjeet:</strong> <span th:text="${userData.phone}"></span></div>
+            <button class="btn btn-primary btn-sm">Click</button>
+        </li>
+        <li class="list-group-item mb-3 d-flex justify-content-between align-items-center">
+            <div><strong>Irshad:</strong> <span th:text="${userData.city}"></span></div>
+            <button class="btn btn-primary btn-sm">Click</button>
+        </li>
+        <li class="list-group-item mb-3 d-flex justify-content-between align-items-center">
+            <div><strong>Muneesh:</strong> <span th:text="${userData.country}"></span></div>
+            <button class="btn btn-primary btn-sm">Click</button>
+        </li>
+        <li class="list-group-item mb-3 d-flex justify-content-between align-items-center">
+            <div><strong>harsimran:</strong> <span th:text="${userData.country}"></span></div>
+            <button class="btn btn-primary btn-sm">Click</button>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
